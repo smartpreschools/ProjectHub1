@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "AddProject";
+    Layout = "~/Areas/ProjectHubAdmin/Views/Shared/_ProjectHubAdmin.cshtml";
+}
+
+
+<br />
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title"> Add Project </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Project Category</label>
+                                <select class="form-control" id="ddlCategoryStatus">
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Project Sub Category</label>
+                                <select class="form-control" id="ddlCategoryStatus">
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Status</label>
+                                <select class="form-control" id="ddlCategoryStatus">
+                                    <option value="True">Active</option>
+                                    <option value="False">InActive</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="exampleInputEmail1">Project Name :  <em class="text-danger">*</em>  </label>
+                                <textarea class="form-control" id="txtProjectName" placeholder="Project Name" msg-value="project name" required rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="exampleInputEmail1">Project Description :  <em class="text-danger">*</em>  </label>
+                                <textarea class="form-control" id="txtProjectName" placeholder="Project Description" msg-value="project description" required rows="4" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnCategoryID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

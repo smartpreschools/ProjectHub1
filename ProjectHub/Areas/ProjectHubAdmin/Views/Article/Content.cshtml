@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Content";
+    Layout = "~/Areas/ProjectHubAdmin/Views/Shared/_ProjectHubAdmin.cshtml";
+}
+
+<br />
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Add Article</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Topic : <em class="text-danger">*</em></label>
+                                <select class="form-control" id="ddlTopic" required msg-value="topic">
+                                </select>
+                                <span id="errddlTopic" class="hidden-span text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Sub Topic :  <em class="text-danger">*</em></label>
+                                <select class="form-control" id="ddlSubTopic" required msg-value="sub topic">
+                                    <option value="0">Select</option>
+                                </select>
+                                <span id="errddlSubTopic" class="hidden-span text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Status</label>
+                                <select class="form-control" id="ddlStatus">
+                                    <option>Active</option>
+                                    <option>InActive</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Article Name : <em class="text-danger">*</em></label>
+                                <textarea id="txtName" class="form-control" rows="2" placeholder="Article Name" required msg-value="article name"></textarea>
+                                <span id="errtxtName" class="hidden-span text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Article Description :  <em class="text-danger">*</em> </label>
+                                <textarea id="txtdesc" class="form-control" rows="5" placeholder="Article Description" required msg-value="article content"></textarea>
+                                <span id="errtxtdesc" class="hidden-span text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnArticleID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/Content/js/ProductAdmin/Article.js"></script>

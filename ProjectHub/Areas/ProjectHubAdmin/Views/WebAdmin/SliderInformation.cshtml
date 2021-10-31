@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "SliderInformation";
+    Layout = "~/Areas/ProjectHubAdmin/Views/Shared/_ProjectHubAdmin.cshtml";
+}
+
+<br />
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Slider Information</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>WebSite Name <em class="text-danger">*</em> </label>
+                                <input type="text" placeholder="Website Name" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Slogan <em class="text-danger">*</em> </label>
+                                <input type="text" placeholder="Slogan"   class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Marquee Text <em class="text-danger">*</em> </label>
+                                <input type="text" placeholder="Marquee Text"   class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Page Title <em class="text-danger">*</em> </label>
+                                <input type="text" placeholder="Page Title"  class="form-control"  />
+                            </div>
+                            <div class="col-md-4">
+                                <label>Footer Text <em class="text-danger">*</em> </label>
+                                <input type="text" placeholder="Footer Text"  class="form-control"  />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnCategoryID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

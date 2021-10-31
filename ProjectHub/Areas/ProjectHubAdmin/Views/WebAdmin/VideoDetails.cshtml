@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "VideoDetails";
+    Layout = "~/Areas/ProjectHubAdmin/Views/Shared/_ProjectHubAdmin.cshtml";
+}
+
+<br />
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Video Details</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Function Name</label>
+                                <select class="form-control" id="ddlCategoryStatus">
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="exampleInputEmail1">Video Caption :  <em class="text-danger">*</em>  </label>
+                                <input type="text" class="form-control" id="txtCategoryName" placeholder="Video Caption" msg-value="function name" required>
+                                <span id="errtxtCategoryName" class="hidden-span text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="exampleInputEmail1">Video Order :  <em class="text-danger">*</em>  </label>
+                                <input type="text" class="form-control" id="txtCategoryName" placeholder="Video Order" msg-value="function name" required>
+                                <span id="errtxtCategoryName" class="hidden-span text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Status</label>
+                                <select class="form-control" id="ddlStatus">
+                                    <option>Active</option>
+                                    <option>InActive</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <label for="exampleInputEmail1">Video URl :  <em class="text-danger">*</em>  </label>
+                                <input type="text" class="form-control" id="txtCategoryName" placeholder="Video Url" msg-value="function name" required>
+                                <span id="errtxtCategoryName" class="hidden-span text-danger"></span>
+                            </div>
+                            <div class="col-md-9">
+                                <label for="exampleInputEmail1">Video Decription :  <em class="text-danger">*</em>  </label>
+                                <input type="text" class="form-control" id="txtCategoryName" placeholder="Video Description" msg-value="function name" required>
+                                <span id="errtxtCategoryName" class="hidden-span text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnCategoryID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

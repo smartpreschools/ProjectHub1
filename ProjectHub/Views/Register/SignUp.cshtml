@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Register as User</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Name : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtMedicineName" placeholder="Name" msg-value="name" required>
+                                    <span id="errtxtMedicineName" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Address : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtExpiryDate" placeholder="Address" msg-value="address" required>
+                                    <span id="errtxtExpiryDate" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Email : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtMRP" placeholder="Email" msg-value="email" required>
+                                    <span id="errtxtMRP" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Mobile : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtMRP" placeholder="Mobile" msg-value="mobile" required>
+                                    <span id="errtxtMRP" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Job Profile : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtExpiryDate" placeholder="Job profile" msg-value="job profile" required>
+                                    <span id="errtxtExpiryDate" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Education : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtExpiryDate" placeholder="Education" msg-value="education" required>
+                                    <span id="errtxtExpiryDate" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>User Name:  <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtExpiryDate" placeholder="User Name" msg-value="User name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Password :  <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtExpiryDate" placeholder="Password" msg-value="Password" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label>Description : <em class="text-danger">*</em> </label>
+                                    <textarea type="text" class="form-control" id="txtDesc" placeholder="Description" msg-value="description" required rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnSocialMediaID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

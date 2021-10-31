@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Topic";
+    Layout = "~/Areas/ProjectHubAdmin/Views/Shared/_ProjectHubAdmin.cshtml";
+}
+
+<br />
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title"> Article Topic</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Topic Name :  <em class="text-danger">*</em>  </label>
+                            <input type="text" class="form-control" id="txtName" placeholder="Topic Name" msg-value="topic name" required>
+                            <span id="errtxtName" class="hidden-span text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Description : </label>
+                            <textarea class="form-control" rows="3" placeholder="Enter ..." maxlength="250" id="txtDesc"></textarea>
+                        </div>
+                        <div>
+                            <label>Status</label>
+                            <select class="form-control" id="ddlStatus">
+                                <option value="True">Active</option>
+                                <option value="False">InActive</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnTopicID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Topic List</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="topiclist" class="table table-bordered" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Description</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/Content/js/ProductAdmin/ArticleTopic.js"></script>
